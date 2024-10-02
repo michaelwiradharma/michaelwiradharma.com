@@ -1,6 +1,10 @@
 import { useState } from "react";
 import "./App.css";
 
+import Links from "./components/Links";
+
+
+
 function App() {
   return (
     <>
@@ -19,6 +23,7 @@ function App() {
         </div>
         <div className="fixed text-right bottom-0 w-full p-4">
           Copyright © 2024 Michael Wiradharma
+          <Links />
         </div>
       </div>
     </>
