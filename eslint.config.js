@@ -3,9 +3,11 @@ import globals from "globals";
 import react from "eslint-plugin-react";
 import reactHooks from "eslint-plugin-react-hooks";
 import reactRefresh from "eslint-plugin-react-refresh";
+import importPlugin from "eslint-plugin-import";
 
 export default [
   js.configs.recommended,
+  importPlugin.flatConfigs.recommended,
   { ignores: ["dist"] },
   {
     files: ["**/*.{js,jsx}"],
@@ -18,13 +20,21 @@ export default [
         sourceType: "module",
       },
     },
-    settings: { react: { version: "18.3" } },
+    settings: { react: { version: "18.3" }, "import/resolver": "foo" },
     plugins: {
       react,
       "react-hooks": reactHooks,
       "react-refresh": reactRefresh,
     },
     rules: {
+      "import/extensions": [
+        "error",
+        "ignorePackages",
+        {
+          ts: "never",
+          tsx: "never",
+        },
+      ],
       "no-unused-vars": "warn",
       "no-undef": "warn",
       ...js.configs.recommended.rules,
