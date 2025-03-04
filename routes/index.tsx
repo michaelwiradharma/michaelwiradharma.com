@@ -2,7 +2,7 @@ import Socials from "../components/Socials.tsx";
 
 export default function Home() {
   return (
-    <div className="container mx-auto my-60">
+    <div className="container mx-auto my-40">
       <div className="grid grid-cols-3">
         <div className="col-span-2 px-4">
           <div className="flex gap-4">
