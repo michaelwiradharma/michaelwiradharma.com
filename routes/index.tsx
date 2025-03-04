@@ -3,12 +3,12 @@ import Socials from "../components/Socials.tsx";
 export default function Home() {
   return (
     <div className="container mx-auto my-40">
-      <div className="grid grid-cols-3">
+      <div className="grid md:grid-cols-3">
         <div className="col-span-2 px-4">
           <div className="flex gap-4">
             <img src="/logo.svg" alt="fresh logo" class="w-16 color-gray" />
             <h1 className="text-5xl my-4">
-              Greetings,I'm<br /> Michael Wiradharma.
+              Greetings, I'm<br />Michael Wiradharma.
             </h1>
           </div>
           <p className="text-xl pr-20">
@@ -26,7 +26,7 @@ export default function Home() {
             <Socials />
           </div>
         </div>
-        <div className="col-span-1">
+        <div className="col-span-1 hidden md:block">
           <img
             src="/michael.jpg"
             alt="Michael Wiradharma"
