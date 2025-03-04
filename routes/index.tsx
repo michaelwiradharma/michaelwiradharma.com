@@ -1,24 +1,38 @@
-import { useSignal } from "@preact/signals";
-import Counter from "../islands/Counter.tsx";
+import Socials from "../components/Socials.tsx";
 
 export default function Home() {
-  const count = useSignal(3);
   return (
-    <div class="px-4 py-8 mx-auto bg-[#86efac]">
-      <div class="max-w-screen-md mx-auto flex flex-col items-center justify-center">
-        <img
-          class="my-6"
-          src="/logo.svg"
-          width="128"
-          height="128"
-          alt="the Fresh logo: a sliced lemon dripping with juice"
-        />
-        <h1 class="text-4xl font-bold">Welcome to Fresh</h1>
-        <p class="my-4">
-          Try updating this message in the
-          <code class="mx-2">./routes/index.tsx</code> file, and refresh.
-        </p>
-        <Counter count={count} />
+    <div className="container mx-auto my-60">
+      <div className="grid grid-cols-3">
+        <div className="col-span-2 px-4">
+          <div className="flex gap-4">
+            <img src="/logo.svg" alt="fresh logo" class="w-16 color-gray" />
+            <h1 className="text-5xl my-4">
+              Greetings,I'm<br /> Michael Wiradharma.
+            </h1>
+          </div>
+          <p className="text-xl pr-20">
+            I'm a software developer who recently graduated from the University
+            of California, Berkeley with a Bachelor's in Electrical Engineering
+            and Computer Science{" "}
+            <strong>(EECS)</strong>. My passion is solving technical challenges
+            and creating impactful solutions through software development.
+          </p>
+          <p className="text-lg pr-20 my-4">
+            Skills:
+            <span className="ml-2">React, Node.js, Python, SQL</span>
+          </p>
+          <div className="my-12">
+            <Socials />
+          </div>
+        </div>
+        <div className="col-span-1">
+          <img
+            src="/michael.jpg"
+            alt="Michael Wiradharma"
+            className="rounded-xl shadow-lg"
+          />
+        </div>
       </div>
     </div>
   );
