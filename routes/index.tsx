@@ -1,4 +1,5 @@
 import Socials from "../components/Socials.tsx";
+import GoogleTag from "../islands/GoogleTag.tsx";
 
 export default function Home() {
   return (
@@ -34,6 +35,7 @@ export default function Home() {
           />
         </div>
       </div>
+      <GoogleTag />
     </div>
   );
 }
