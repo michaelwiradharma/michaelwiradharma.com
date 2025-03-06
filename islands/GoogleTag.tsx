@@ -1,12 +1,5 @@
 import { useEffect } from "preact/hooks";
 
-declare global {
-  interface GlobalThis {
-    // deno-lint-ignore no-explicit-any
-    dataLayer: any[];
-  }
-}
-
 export default function GoogleTag() {
   useEffect(() => {
     globalThis.dataLayer = globalThis.dataLayer || [];
@@ -26,5 +19,5 @@ export default function GoogleTag() {
     gtag("config", "G-F7423QN12L");
   }, []);
 
-  return null;
+  return <div style="display: none;"></div>;
 }
