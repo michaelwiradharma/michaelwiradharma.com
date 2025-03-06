@@ -8,7 +8,6 @@ import * as $_layout from "./routes/_layout.tsx";
 import * as $api_joke from "./routes/api/joke.ts";
 import * as $greet_name_ from "./routes/greet/[name].tsx";
 import * as $index from "./routes/index.tsx";
-import * as $Counter from "./islands/Counter.tsx";
 import * as $DarkModeToggle from "./islands/DarkModeToggle.tsx";
 import * as $GoogleTag from "./islands/GoogleTag.tsx";
 import * as $Logo from "./islands/Logo.tsx";
@@ -24,7 +23,6 @@ const manifest = {
     "./routes/index.tsx": $index,
   },
   islands: {
-    "./islands/Counter.tsx": $Counter,
     "./islands/DarkModeToggle.tsx": $DarkModeToggle,
     "./islands/GoogleTag.tsx": $GoogleTag,
     "./islands/Logo.tsx": $Logo,
