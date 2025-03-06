@@ -1,7 +1,18 @@
+import { Moon } from "lucide-preact";
+
 export default function Header() {
   return (
-    <header className="h-24 mb-8">
-      {/* <img src="/logo.svg" alt="fresh logo" class="w-16 color-gray" /> */}
+    <header className="mb-8 py-4">
+      <div className="flex flex-row justify-between">
+        <img src="/tandatangan.jpeg" alt="fresh logo" class="w-48 color-gray" />
+        <div className="flex flex-row gap-4">
+          {/* <h1 className="text-xl my-4">Work</h1>
+          <h1 className="text-xl my-4">About</h1> */}
+          {/* <div className="grid items-center">
+            <Moon />
+          </div> */}
+        </div>
+      </div>
     </header>
   );
 }

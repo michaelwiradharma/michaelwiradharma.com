@@ -2,10 +2,9 @@ import Socials from "./Socials.tsx";
 
 export default function Landing() {
   return (
-    <div className="grid md:grid-cols-3">
+    <div className="grid md:grid-cols-3 my-40">
       <div className="col-span-2 px-4">
         <div className="flex gap-4">
-          <img src="/logo.svg" alt="fresh logo" class="w-16 color-gray" />
           <h1 className="text-5xl my-4">
             Greetings, I'm<br />Michael Wiradharma.
           </h1>
@@ -29,7 +28,7 @@ export default function Landing() {
         <img
           src="/michael.jpg"
           alt="Michael Wiradharma"
-          className="rounded-xl shadow-lg"
+          className="rounded-xl shadow-lg h-[615px]"
         />
       </div>
     </div>
